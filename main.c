@@ -4,6 +4,7 @@
 
 
 #include <stdio.h>
+#include "util.h"
 
 int main(int argc, char **argv)
 {
@@ -11,11 +12,7 @@ int main(int argc, char **argv)
     
     printf("Cuantos numeros se van a sumar:");
     scanf("%d",&n);
-    for(indice=0;indice<n;indice++){
-        printf("cual es el numero %d? ",indice);
-        scanf("%d",&(arreglo[indice]));
-        //printf("%d\n", arreglo[indice]);
-    }
+    leeArreglo( n, arreglo);
 	return 0;
 }
 
